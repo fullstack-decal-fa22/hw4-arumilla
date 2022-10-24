@@ -13,7 +13,7 @@ const Feed = () => {
     return (
         <div>
             <Menu createPost={
-                (color) => setBlocks((prevState) => [...prevState, color])
+                (color) => setBlocks((prev) => [color, ...prev])
             }/>
 
             {/* Below is where all of your Blocks should render! */}
